@@ -9,7 +9,7 @@ on:
     paths:
       - '.github/workflows/**'
   schedule:
-    - cron: '20 0,1 * * *'
+    - cron: '21 9 * * *'
 
 env:
   TZ: Asia/Shanghai
@@ -45,8 +45,8 @@ jobs:
 
       - name: start run
         env:
-          PUSHPLUS_KEY: ${{ secrets.PUSHPLUS_KEY }}
-          PRIVATE_AES_KEY: ${{ secrets.PRIVATE_AES_KEY }}
+          PUSHPLUS_KEY: 0cd878a9d7f64ad5b89aa7afd605c977
+          PRIVATE_AES_KEY: 666666
         run: |
           python main.py
 
